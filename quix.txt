@@ -10,8 +10,8 @@ w       http://wikipedia.org/wiki/Special:Search/%s_         				Wikipedia Searc
 wz		http://zh.wikipedia.org/wiki/Special:Search?search=%s				中文維基搜索
 
 @常用bookmarklet
-sk      javascript:(function(){var w=window.open('https://kippt.com/extensions/new/?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title)+'&source=bp1&notes='+encodeURIComponent(''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text)),'kippt','width=400,height=245,location=0,links=0,scrollbars=0,toolbar=0'); if(w)setTimeout(function(){w.focus()},100);else{alert('It seems that you have a popup blocker. Please, hold the CTRL-key and try again.')}})();      保存到Kippt
-sm		javascript:(function(){if(document.body){var s=document.createElement('script');s.setAttribute('src','http://note-static.sdo.com/static/js/plugin/plugin.main.js');document.body.appendChild(s)}})();																			保存到麥庫
+sk      javascript:(function(){var%20w=window.open('https://kippt.com/extensions/new/?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title)+'&source=bp1&notes='+encodeURIComponent(''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text)),'kippt','width=400,height=245,location=0,links=0,scrollbars=0,toolbar=0');%20if(w)setTimeout(function(){w.focus()},100);else{alert('It%20seems%20that%20you%20have%20a%20popup%20blocker.%20Please,%20hold%20the%20CTRL-key%20and%20try%20again.')}})();      保存到Kippt
+sm		javascript:(function(){if(document.body){var%20s=document.createElement('script');s.setAttribute('src','http://note-static.sdo.com/static/js/plugin/plugin.main.js');document.body.appendChild(s)}})();																			保存到麥庫
 
 
 @Basic commands
