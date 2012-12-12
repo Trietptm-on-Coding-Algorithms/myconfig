@@ -3,16 +3,28 @@
 > For the syntax of this file, please refer to http://quixapp.com/syntax/
 >
 
+@常用搜索
+b		http://www.baidu.com/baidu?wd=%s&tn=cnopera&ie=utf-8				百度搜索
+g       https://www.google.com/search?q=%s									Google Search
+w       http://wikipedia.org/wiki/Special:Search/%s_         				Wikipedia Search
+wz		http://zh.wikipedia.org/wiki/Special:Search?search=%s				中文維基搜索
+
+@常用bookmarklet
+sk      javascript:(function(){var w=window.open('https://kippt.com/extensions/new/?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title)+'&source=bp1&notes='+encodeURIComponent(''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text)),'kippt','width=400,height=245,location=0,links=0,scrollbars=0,toolbar=0'); if(w)setTimeout(function(){w.focus()},100);else{alert('It seems that you have a popup blocker. Please, hold the CTRL-key and try again.')}})();      保存到Kippt
+sm		javascript:(function(){if(document.body){var s=document.createElement('script');s.setAttribute('src','http://note-static.sdo.com/static/js/plugin/plugin.main.js');document.body.appendChild(s)}})();																			保存到麥庫
+
+
 @Basic commands
-@These are the most basic commands Quix offers, but possibly also the most powerful ones.
 a       http://www.amazon.com/s/?field-keywords=%s							Amazon Search
 d       http://www.google.com/search?q=define:%s							Google Define a word
-dict	http://www.google.com/dictionary?langpair=en%7Cen&q=%s&hl=en&aq=f	Google Dictionary for a word
+db		http://www.douban.com/search?q=%s									豆瓣搜索
+dbook	http://book.douban.com/subject_search?search_text=%s&cat=1003		豆瓣讀書搜索
+dc		http://www.doucr.com/su?cx=009433062619362562478%3Ajkn17iq2kq4&q=%s	豆殼搜索
+dict	http://dict.youdao.com/search?q=%s&keyfrom=dict.index   			有道翻譯
 e       mailto:?subject=%t&body=%s%0A%0A%09%r%0A%0A							Email link
 f       http://flickr.com/search/?q=%s										Flickr Search
 fc      http://flickr.com/search/?q=%s&l=comm								Flickr Commercial use CC Search
-find		javascript:s='%s';if(s==''){void(s=prompt('Find%20text:',''));}s='('+s+')';x=new%20RegExp(s,'gi');rn=Math.floor(Math.random()*100);rid='z'%20+%20rn;b%20=%20document.body.innerHTML;b=b.replace(x,'<span%20name='%20+%20rid%20+%20'%20id='%20+%20rid%20+%20'%20style=\'color:#000;background-color:yellow;%20font-weight:bold;\'>$1</span>');void(document.body.innerHTML=b);alert('Found%20'%20+%20document.getElementsByName(rid).length%20+%20'%20matches.');window.scrollTo(0,document.getElementsByName(rid)[0].offsetTop); 	Find in current pagem, usage: 'find test' will highlight all occurrences of 'test' and will take you to the first occurrence. Just 'find' will open a prompt.
-g       http://www.google.com/search?q=%s									Google Search
+find	javascript:s='%s';if(s==''){void(s=prompt('Find%20text:',''));}s='('+s+')';x=new%20RegExp(s,'gi');rn=Math.floor(Math.random()*100);rid='z'%20+%20rn;b%20=%20document.body.innerHTML;b=b.replace(x,'<span%20name='%20+%20rid%20+%20'%20id='%20+%20rid%20+%20'%20style=\'color:#000;background-color:yellow;%20font-weight:bold;\'>$1</span>');void(document.body.innerHTML=b);alert('Found%20'%20+%20document.getElementsByName(rid).length%20+%20'%20matches.');window.scrollTo(0,document.getElementsByName(rid)[0].offsetTop); 	Find in current pagem, usage: 'find test' will highlight all occurrences of 'test' and will take you to the first occurrence. Just 'find' will open a prompt.
 gbs     http://blogsearch.google.com/blogsearch?q=%s						Google Blog Search
 imdb    http://www.imdb.com/find?s=all&q=%s									IMDB Search
 img     http://www.google.com/images?q=%s									Google Image Search
@@ -21,8 +33,7 @@ gs      http://www.google.com/search?q=site:%d%20%s							Search the current sit
 nf      http://www.netflix.com/Search?v1=%s									Netflix Search
 php     http://php.net/search.php?show=quickref&pattern=%s  				PHP Function Search
 tr      http://translate.google.com/translate?u=%r&tl=%s					Translate the current page
-w       http://wikipedia.org/wiki/Special:Search/%s_         				Wikipedia Search
-mh		http://www.mahalo.com/search?q=%s									Mahalo Search
+mahalo	http://www.mahalo.com/search?q=%s									Mahalo Search
 read 	javascript:(function(){readStyle='style-newspaper';readSize='size-medium';readMargin='margin-narrow';_readability_script=document.createElement('SCRIPT');_readability_script.type='text/javascript';_readability_script.src='http://lab.arc90.com/experiments/readability/js/readability.js?x='+(Math.random());document.getElementsByTagName('head')[0].appendChild(_readability_script);_readability_css=document.createElement('LINK');_readability_css.rel='stylesheet';_readability_css.href='http://lab.arc90.com/experiments/readability/css/readability.css';_readability_css.type='text/css';_readability_css.media='screen';document.getElementsByTagName('head')[0].appendChild(_readability_css);_readability_print_css=document.createElement('LINK');_readability_print_css.rel='stylesheet';_readability_print_css.href='http://lab.arc90.com/experiments/readability/css/readability-print.css';_readability_print_css.media='print';_readability_print_css.type='text/css';document.getElementsByTagName('head')[0].appendChild(_readability_print_css);})(); Readability
 wa		http://www.wolframalpha.com/input/?i=%s								Wolfram Alpha Search
 
