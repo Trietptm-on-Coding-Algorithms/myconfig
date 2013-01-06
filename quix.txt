@@ -6,6 +6,7 @@
 @1 常用搜索命令
 b		http://www.baidu.com/baidu?wd=%s&tn=cnopera&ie=utf-8				搜索 百度
 g       https://www.google.com/search?q=%s									搜索 Google
+gs      https://www.google.com/search?q=site:%d%20%s						搜索 Google 站内搜索
 w       http://wikipedia.org/wiki/Special:Search/%s_         				搜索 Wikipedia
 wz		http://zh.wikipedia.org/wiki/Special:Search?search=%s				搜索 中文维基
 d		https://duckduckgo.com/?q=%s										命令 & 搜索 DuckDuckGo
@@ -18,7 +19,7 @@ e       mailto:?subject=%t&body=%s%0A%0A%09%r%0A%0A							Email 选中内容或�
 bc      http://ctext.org/library.pl?if=gb&title=%s                          搜索 ctext
 bd  	http://book.douban.com/subject_search?search_text=%s&cat=1003		搜索 豆瓣读书
 be		http://www.e-booksdirectory.com/googlesearch.php?cx=partner-pub-1412767240604697%3A3664eq-rpsj&cof=FORID%3A10&ie=UTF-8&q=%s&sa=Search  搜索 E-Books Directory
-bg		http://www.gutenberg.org/ebooks/search/?query=%s					搜索 古登堡
+bgu		http://www.gutenberg.org/ebooks/search/?query=%s					搜索 古登堡
 bi		http://ishare.iask.sina.com.cn/search.php?key=%s&format=			搜索 爱问 资料
 bl		http://www.kugwa.com/booklist/search?keyword=%s						搜索 酷瓜书单(提示：list)
 bk		http://ikandou.com/search/?q=%s										搜索 爱看豆(提示：kindle)
@@ -38,53 +39,67 @@ vy      http://www.youtube.com/results?search_query=%s						搜索 YouTube
 @1.3 影音类搜索
 mm      http://search.mtime.com/search/?%s                                  搜索 Mtime
 md		http://movie.douban.com/subject_search?search_text=%s&cat=1002		搜索 豆瓣电影
+mi    	http://www.imdb.com/find?s=all&q=%s									搜索 IMDB
+mb	  	http://music.baidu.com/search?key=%s								搜索 百度音乐
+mx		http://www.xiami.com/search?key=%s&pos=1							搜索 虾米音乐
+ms		http://www.shooter.cn/sub/?searchword=%s							搜索 射手字幕
+
+@1.4 图片类搜索
+pg      https://www.google.com/images?q=%s									搜索 Google 图片
+pf      http://flickr.com/search/?q=%s										搜索 Flickr
+pfc     http://flickr.com/search/?q=%s&l=comm								搜索 Flickr Commercial use CC
 
 
-@1.4 问答类搜索
+
+@1.5 问答类搜索
 qi      http://iask.sina.com.cn/search_engine/search_knowledge_engine.php?key=%s 搜索 爱问
 qs      http://stackoverflow.com/search?q=%s                                搜索 Stack Overflow
 qq		http://www.quora.com/search?q=%s									搜索 Quora
 qz		http://www.zhihu.com/search?q=%s									搜索 知乎
 
-@1.5 知识类搜索
+@1.6 知识类搜索
 kb		http://www.britannica.com/search?query=%s							搜索 大英百科全书
 ki		http://www.google.com/cse?cx=001101905209118093242%3Arsrjvdp2op4&ie=UTF-8&q=%s&sa=Search 搜索 Internet Encyclopedia of Philosophy
 km		https://www.google.com/search?q=site:www.marxists.org/%20%s			搜索 马克思主义
 ks		http://plato.stanford.edu/search/searcher.py?query=%s				搜索 Stanford Encyclopedia of Philosophy
 kw		http://www.wolframalpha.com/input/?i=%s								搜索 Wolfram Alpha
 
-@1.6 社交类搜索
+@1.7 社交类搜索
 jd		http://www.douban.com/search?q=%s									搜索 豆瓣
 jdc		http://www.doucr.com/su?cx=009433062619362562478%3Ajkn17iq2kq4&q=%s	搜索 豆壳
 jg		https://plus.google.com/_/search/form?q=%s&qc=&qb=					搜索 Google+
 jt      http://search.twitter.com/search?q=%s								搜索 Twitter
 jw 		http://s.weibo.com/weibo/%s											搜索 微博
 
-@1.7 资源类搜索
+@1.8 资源类搜索
 zf      http://www.goobye.net/search?q=%s&business=ftpsrc&act=search        搜索 FTP 来自goobye
+zk		http://kat.ph/torrents/usearch/?q=%s								搜索 Kat.ph
+zm		http://www.mininova.org/search/?search=%s&cat=0						搜索 Mininova
+zs		http://www.simplecd.me/search/entry/?query=%s						搜索 simpleCD
+zt		http://www.torrentdownloads.net/search/?search=%s					搜索 TorrentDown
 zz		http://www.zhaofile.com/search.php?type=webdisk&zfilter=&cx=006138829939205075871%3Abxt8ocmyw_0&cof=FORID%3A11&ie=UTF-8&hl=zh-CN&sa=%E6%90%9C%E7%B4%A2&q=%s 搜索 找文件
 
-@1.8 其它搜索
-a       http://www.amazon.com/s/?field-keywords=%s							搜索 Amazon
+@1.9 购物搜索
+gt	    http://s.taobao.com/search?q=%s                                     购物 淘宝
+ga		http://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&url=search-alias%3Daps&field-keywords=%s&x=0&y=0 购物 亚马逊amazon.cn
+gae     http://www.amazon.com/s/?field-keywords=%s							搜索 Amazon(美国）
+gh		http://www.huihui.cn/search?q=%s									购物 惠惠比价
+
+@1.10 其它搜索
 define  http://www.google.com/search?q=define:%s							搜索 Google 单词定义
 dict	http://dict.youdao.com/search?q=%s&keyfrom=dict.index   			搜索 有道词典
-f       http://flickr.com/search/?q=%s										搜索 Flickr
-fc      http://flickr.com/search/?q=%s&l=comm								搜索 Flickr Commercial use CC
 gbs     http://blogsearch.google.com/blogsearch?q=%s						搜索 Google Blog
-imdb    http://www.imdb.com/find?s=all&q=%s									搜索 IMDB
-img     http://www.google.com/images?q=%s									搜索 Google 图片
 map     http://www.google.com/maps?q=%s										搜索 Google Maps
-gs      http://www.google.com/search?q=site:%d%20%s							搜索 Google 站内搜索
 php     http://php.net/search.php?show=quickref&pattern=%s  				搜索 PHP Function
 play	http://www.iplaysoft.com/tools/xlvod/?str=%s						电影下载地址在线播放
 tr      http://translate.google.com/translate?u=%r&tl=%s					google翻译当前页面
 mahalo	http://www.mahalo.com/search?q=%s									搜索 Mahalo
 
 @2 一般命令
-cc      javascript:void((function()%7Bfunction%20$(id)%7Breturn%20w.document.getElementById(id)%7Dvar%20w=window.open(%22about:blank%22,%22%22,%22width=500,height=130%22);w.document.title='Refer%20to%20%22'+document.title+'%22';w.document.write('%3Cstyle%3E*%7Bmargin:0;padding:0;font-size:16px;%7Dbody%7Bmargin:10px;%7Dlabel,input%7Bmargin-bottom:4px;%7Dlabel%7Bclear:both;font-weight:bold;height:20px;width:15%25;float:left;line-height:20px;text-align:right;display:block;font-family:arial,sans-serif%7Dinput%7Bfont-family:monospace;border:dashed%201px%20black;width:80%25;float:right;height:20px;%7D%3C/style%3E%3Clabel%20for=%22html%22%3EHTML%3C/label%3E%3Cinput%20id=%22html%22%3E%3C/input%3E%3Clabel%20for=%22ubb%22%3EUBB%3C/label%3E%3Cinput%20id=%22ubb%22%3E%3C/input%3E%3Clabel%20for=%22text%22%3EText%3C/label%3E%3Cinput%20id=%22text%22%3E%3C/input%3E%3Clabel%20for=%22title%22%3ETitle%3C/label%3E%3Cinput%20id=%22title%22%3E%3C/input%3E');$('html').value='%3Ca%20href=%22'+encodeURI(location.href)+'%22%20target=%22_blank%22%3E'+document.title+'%3C/a%3E';$('title').value=document.title;$('ubb').value=%22%5Burl=%22+encodeURI(location.href)+%22%5D%22+document.title+%22%5B/url%5D%22;$('text').value=document.title+%22%20%22+encodeURI(location.href);var%20z=w.document.getElementsByTagName('input');for(var%20i=0;i%3Cz.length;i++)%7Bz%5Bi%5D.onfocus=z%5Bi%5D.onmousemove=function()%7Bthis.select();%7D;z%5Bi%5D.onclick=z%5Bi%5D.onmousedown=z%5Bi%5D.onmouseup=function()%7Bthis.select();return%20false;%7D;%7D$('html').focus();%7D)());    复制标题和网址
+cc      javascript:prompt%28%22URL%20and%20title%3A%22%2C%20document.location.href%2B%27%20%22%27%2Bdocument.title%2B%27%22%27%29%3Bvoid%280%29    复制标题和网址
 read 	javascript:(function(){readStyle='style-newspaper';readSize='size-medium';readMargin='margin-narrow';_readability_script=document.createElement('SCRIPT');_readability_script.type='text/javascript';_readability_script.src='http://lab.arc90.com/experiments/readability/js/readability.js?x='+(Math.random());document.getElementsByTagName('head')[0].appendChild(_readability_script);_readability_css=document.createElement('LINK');_readability_css.rel='stylesheet';_readability_css.href='http://lab.arc90.com/experiments/readability/css/readability.css';_readability_css.type='text/css';_readability_css.media='screen';document.getElementsByTagName('head')[0].appendChild(_readability_css);_readability_print_css=document.createElement('LINK');_readability_print_css.rel='stylesheet';_readability_print_css.href='http://lab.arc90.com/experiments/readability/css/readability-print.css';_readability_print_css.media='print';_readability_print_css.type='text/css';document.getElementsByTagName('head')[0].appendChild(_readability_print_css);})(); Readability
 find	javascript:s='%s';if(s==''){void(s=prompt('Find%20text:',''));}s='('+s+')';x=new%20RegExp(s,'gi');rn=Math.floor(Math.random()*100);rid='z'%20+%20rn;b%20=%20document.body.innerHTML;b=b.replace(x,'<span%20name='%20+%20rid%20+%20'%20id='%20+%20rid%20+%20'%20style=\'color:#000;background-color:yellow;%20font-weight:bold;\'>$1</span>');void(document.body.innerHTML=b);alert('Found%20'%20+%20document.getElementsByName(rid).length%20+%20'%20matches.');window.scrollTo(0,document.getElementsByName(rid)[0].offsetTop); 	在当前页面查找，使用方法：输入“find test”后可将当前页面中所有的“test”一词高亮显示，并滚动屏幕至第一个“test”处；只输入“find”，则会打开一个可输入关键词的提示框
-split	javascript:(function(f){if(f)if(f.rows){f.cols=f.rows;f.removeAttribute('rows')}else{%20f.rows=f.cols;f.removeAttribute('cols')}else{var%20w=window,d=document,html=d.documentElement.outerHTML;d.write('<title>'+d.title+'</title><frameset%20rows=\'50%,50%'+'\'%20id=\'fset__\'><frame%20id=\'f1\'><frame%20id=\'f2\'></frameset>');w.f1.document.write(html);w.f2.document.write(html)}})(window.fset__)																																	分割页面
+ys		script:http://web.pinyin.sogou.com/web_ime/init.js					 搜狗云输入
 
 @2.1 翻译命令
 ty      javascript:%20void((function()%20{var%20element%20=%20document.createElement('script');element.id%20=%20'outfox_seed_js';element.charset%20=%20'utf-8',element.setAttribute('src',%20'http://fanyi.youdao.com/web2/seed.js?'%20+%20Date.parse(new%20Date()));document.body.appendChild(element);})())    有道翻译
@@ -103,6 +118,7 @@ st	    http://twitter.com/home?status=%s%20%t%20%r							Tweet 当前页
 stb 	javascript:d=document;w=window;e=w.getSelection;k=d.getSelection;x=d.selection;s=(e?e():(k)?k():(x?x.createRange().text:0));f='http://www.tumblr.com/share';l=d.location,e=encodeURIComponent;p='?v=3&u='+e(l.href)%20+'&t='+e(d.title)%20+'&s='+e(s);u=f+p;try{if(!/^(.*\.)?tumblr[^.]*$/.test(l.host))throw(0);tstbklt();}catch(z){a%20=function(){if(!w.open(u,'t','toolbar=0,resizable=0,status=1,width=450,height=430'))l.href=u;};if(/Firefox/.test(navigator.userAgent))setTimeout(a,0);else%20a();}void(0)						分享至 Tumblr
 sb		script:http://bufferapp.com/js/bookmarklet.v1.js					Buffer to tweet the current page with <a href="http://bufferapp.com">Buffer App</a>.
 sg		javascript:(function(f){if(f)if(f.rows){f.cols=f.rows;f.removeAttribute('rows')}else{%20f.rows=f.cols;f.removeAttribute('cols')}else{var%20w=window,d=document,html=d.documentElement.outerHTML;d.write('<title>'+d.title+'</title><frameset%20rows=\'50%,50%'+'\'%20id=\'fset__\'><frame%20id=\'f1\'><frame%20id=\'f2\'></frameset>');w.f1.document.write(html);w.f2.document.write(html)}})(window.fset__) 分享至 Google+
+sw		javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)+'&source=bookmark','_blank','width=450,height=400');})()								分享至 微博
 
 @2.3 WordPress命令
 @Quix was of course created by <a href="http://yoast.com">Yoast</a>, a WordPress addict, and as such, some WordPress functions are of course needed!
