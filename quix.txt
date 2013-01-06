@@ -15,7 +15,7 @@ bing	http://www.bing.com/search?q=%s										搜索 Bing
 bg		http://baigoogledu.com/s.php?hl=zh-CN&q=%s							搜索 百Google度
 e       mailto:?subject=%t&body=%s%0A%0A%09%r%0A%0A							Email 选中内容或者当前链接
 
-@1.1 书籍类搜索
+@1.1 书籍类搜索(b)
 bc      http://ctext.org/library.pl?if=gb&title=%s                          搜索 ctext
 bd  	http://book.douban.com/subject_search?search_text=%s&cat=1003		搜索 豆瓣读书
 be		http://www.e-booksdirectory.com/googlesearch.php?cx=partner-pub-1412767240604697%3A3664eq-rpsj&cof=FORID%3A10&ie=UTF-8&q=%s&sa=Search  搜索 E-Books Directory
@@ -31,12 +31,12 @@ by		http://www.inien.com/w/#/%s											搜索 亿年书海
 bz		http://book.zi5.me/search/?key=%s									搜索 子乌书简
 bbk		http://search.kongfz.com/book.jsp?query=%s&sale=0&category=			购书 孔夫子
 
-@1.2 视频类搜索
+@1.2 视频类搜索(v)
 vs      http://www.soku.com/v?keyword=%s                                    搜索 搜酷
 vv      http://vimeo.com/videos/search:%s									搜索 Vimeo
 vy      http://www.youtube.com/results?search_query=%s						搜索 YouTube
 
-@1.3 影音类搜索
+@1.3 影音类搜索(m)
 mm      http://search.mtime.com/search/?%s                                  搜索 Mtime
 md		http://movie.douban.com/subject_search?search_text=%s&cat=1002		搜索 豆瓣电影
 mi    	http://www.imdb.com/find?s=all&q=%s									搜索 IMDB
@@ -44,12 +44,10 @@ mb	  	http://music.baidu.com/search?key=%s								搜索 百度音乐
 mx		http://www.xiami.com/search?key=%s&pos=1							搜索 虾米音乐
 ms		http://www.shooter.cn/sub/?searchword=%s							搜索 射手字幕
 
-@1.4 图片类搜索
+@1.4 图片类搜索(p)
 pg      https://www.google.com/images?q=%s									搜索 Google 图片
 pf      http://flickr.com/search/?q=%s										搜索 Flickr
 pfc     http://flickr.com/search/?q=%s&l=comm								搜索 Flickr Commercial use CC
-
-
 
 @1.5 问答类搜索
 qi      http://iask.sina.com.cn/search_engine/search_knowledge_engine.php?key=%s 搜索 爱问
@@ -57,21 +55,21 @@ qs      http://stackoverflow.com/search?q=%s                                搜�
 qq		http://www.quora.com/search?q=%s									搜索 Quora
 qz		http://www.zhihu.com/search?q=%s									搜索 知乎
 
-@1.6 知识类搜索
+@1.6 知识类搜索(k)
 kb		http://www.britannica.com/search?query=%s							搜索 大英百科全书
 ki		http://www.google.com/cse?cx=001101905209118093242%3Arsrjvdp2op4&ie=UTF-8&q=%s&sa=Search 搜索 Internet Encyclopedia of Philosophy
 km		https://www.google.com/search?q=site:www.marxists.org/%20%s			搜索 马克思主义
 ks		http://plato.stanford.edu/search/searcher.py?query=%s				搜索 Stanford Encyclopedia of Philosophy
 kw		http://www.wolframalpha.com/input/?i=%s								搜索 Wolfram Alpha
 
-@1.7 社交类搜索
+@1.7 社交类搜索(j)
 jd		http://www.douban.com/search?q=%s									搜索 豆瓣
 jdc		http://www.doucr.com/su?cx=009433062619362562478%3Ajkn17iq2kq4&q=%s	搜索 豆壳
 jg		https://plus.google.com/_/search/form?q=%s&qc=&qb=					搜索 Google+
 jt      http://search.twitter.com/search?q=%s								搜索 Twitter
 jw 		http://s.weibo.com/weibo/%s											搜索 微博
 
-@1.8 资源类搜索
+@1.8 资源类搜索(z)
 zf      http://www.goobye.net/search?q=%s&business=ftpsrc&act=search        搜索 FTP 来自goobye
 zk		http://kat.ph/torrents/usearch/?q=%s								搜索 Kat.ph
 zm		http://www.mininova.org/search/?search=%s&cat=0						搜索 Mininova
@@ -79,7 +77,7 @@ zs		http://www.simplecd.me/search/entry/?query=%s						搜索 simpleCD
 zt		http://www.torrentdownloads.net/search/?search=%s					搜索 TorrentDown
 zz		http://www.zhaofile.com/search.php?type=webdisk&zfilter=&cx=006138829939205075871%3Abxt8ocmyw_0&cof=FORID%3A11&ie=UTF-8&hl=zh-CN&sa=%E6%90%9C%E7%B4%A2&q=%s 搜索 找文件
 
-@1.9 购物搜索
+@1.9 购物搜索(g)
 gt	    http://s.taobao.com/search?q=%s                                     购物 淘宝
 ga		http://www.amazon.cn/s/ref=nb_sb_noss?__mk_zh_CN=%E4%BA%9A%E9%A9%AC%E9%80%8A%E7%BD%91%E7%AB%99&url=search-alias%3Daps&field-keywords=%s&x=0&y=0 购物 亚马逊amazon.cn
 gae     http://www.amazon.com/s/?field-keywords=%s							搜索 Amazon(美国）
@@ -96,17 +94,15 @@ tr      http://translate.google.com/translate?u=%r&tl=%s					google翻译当前�
 mahalo	http://www.mahalo.com/search?q=%s									搜索 Mahalo
 
 @2 一般命令
-cc      javascript:prompt%28%22URL%20and%20title%3A%22%2C%20document.location.href%2B%27%20%22%27%2Bdocument.title%2B%27%22%27%29%3Bvoid%280%29    复制标题和网址
-cr		javascript:void((function()%7Bfunction%20$(id)%7Breturn%20w.document.getElementById(id)%7Dvar%20w=window.open(%22about:blank%22,%22%22,%22width=500,height=130%22);w.document.title='Refer%20to%20%22'+document.title+'%22';w.document.write('%3Cstyle%3E*%7Bmargin:0;padding:0;font-size:16px;%7Dbody%7Bmargin:10px;%7Dlabel,input%7Bmargin-bottom:4px;%7Dlabel%7Bclear:both;font-weight:bold;height:20px;width:15%25;float:left;line-height:20px;text-align:right;display:block;font-family:arial,sans-serif%7Dinput%7Bfont-family:monospace;border:dashed%201px%20black;width:80%25;float:right;height:20px;%7D%3C/style%3E%3Clabel%20for=%22html%22%3EHTML%3C/label%3E%3Cinput%20id=%22html%22%3E%3C/input%3E%3Clabel%20for=%22ubb%22%3EUBB%3C/label%3E%3Cinput%20id=%22ubb%22%3E%3C/input%3E%3Clabel%20for=%22text%22%3EText%3C/label%3E%3Cinput%20id=%22text%22%3E%3C/input%3E%3Clabel%20for=%22title%22%3ETitle%3C/label%3E%3Cinput%20id=%22title%22%3E%3C/input%3E');$('html').value='%3Ca%20href=%22'+encodeURI(location.href)+'%22%20target=%22_blank%22%3E'+document.title+'%3C/a%3E';$('title').value=document.title;$('ubb').value=%22%5Burl=%22+encodeURI(location.href)+%22%5D%22+document.title+%22%5B/url%5D%22;$('text').value=document.title+%22%20%22+encodeURI(location.href);var%20z=w.document.getElementsByTagName('input');for(var%20i=0;i%3Cz.length;i++)%7Bz%5Bi%5D.onfocus=z%5Bi%5D.onmousemove=function()%7Bthis.select();%7D;z%5Bi%5D.onclick=z%5Bi%5D.onmousedown=z%5Bi%5D.onmouseup=function()%7Bthis.select();return%20false;%7D;%7D$('html').focus();%7D)()); refer
 read 	javascript:(function(){readStyle='style-newspaper';readSize='size-medium';readMargin='margin-narrow';_readability_script=document.createElement('SCRIPT');_readability_script.type='text/javascript';_readability_script.src='http://lab.arc90.com/experiments/readability/js/readability.js?x='+(Math.random());document.getElementsByTagName('head')[0].appendChild(_readability_script);_readability_css=document.createElement('LINK');_readability_css.rel='stylesheet';_readability_css.href='http://lab.arc90.com/experiments/readability/css/readability.css';_readability_css.type='text/css';_readability_css.media='screen';document.getElementsByTagName('head')[0].appendChild(_readability_css);_readability_print_css=document.createElement('LINK');_readability_print_css.rel='stylesheet';_readability_print_css.href='http://lab.arc90.com/experiments/readability/css/readability-print.css';_readability_print_css.media='print';_readability_print_css.type='text/css';document.getElementsByTagName('head')[0].appendChild(_readability_print_css);})(); Readability
 find	javascript:s='%s';if(s==''){void(s=prompt('Find%20text:',''));}s='('+s+')';x=new%20RegExp(s,'gi');rn=Math.floor(Math.random()*100);rid='z'%20+%20rn;b%20=%20document.body.innerHTML;b=b.replace(x,'<span%20name='%20+%20rid%20+%20'%20id='%20+%20rid%20+%20'%20style=\'color:#000;background-color:yellow;%20font-weight:bold;\'>$1</span>');void(document.body.innerHTML=b);alert('Found%20'%20+%20document.getElementsByName(rid).length%20+%20'%20matches.');window.scrollTo(0,document.getElementsByName(rid)[0].offsetTop); 	在当前页面查找，使用方法：输入“find test”后可将当前页面中所有的“test”一词高亮显示，并滚动屏幕至第一个“test”处；只输入“find”，则会打开一个可输入关键词的提示框
 pinyin	javascript:(function(q){!!q?q.toggle():(function(d,j){j=d.createElement('script');j.src='http://ime.qq.com/fcgi-bin/getjs';j.setAttribute('ime-cfg','lt=2');d.getElementsByTagName('head')[0].appendChild(j)})(document)})(window.QQWebIME)					 QQ云输入
 
-@2.1 翻译命令
+@2.1 翻译命令(t)
 ty      javascript:%20void((function()%20{var%20element%20=%20document.createElement('script');element.id%20=%20'outfox_seed_js';element.charset%20=%20'utf-8',element.setAttribute('src',%20'http://fanyi.youdao.com/web2/seed.js?'%20+%20Date.parse(new%20Date()));document.body.appendChild(element);})())    有道翻译
 tg		javascript:{d=document;b=d.body;o=d.createElement('script');o.setAttribute('src','http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit');o.setAttribute('type','text/javascript');b.appendChild(o);v=b.insertBefore(d.createElement('div'),b.firstChild);v.id='google_translate_element';v.style.display='none';p=d.createElement('script');p.text='function%20googleTranslateElementInit(){new%20google.translate.TranslateElement({pageLanguage:'+'\'\''+'},\'google_translate_element\');}';p.setAttribute('type','text/javascript');b.appendChild(p);}void(0); Google 翻译工具栏
 
-@2.2 社交命令
+@2.2 社交命令(s)
 @以下命令多用于一些社会化的网站及服务。
 sm		javascript:(function(){if(document.body){var%20s=document.createElement('script');s.setAttribute('src','http://note-static.sdo.com/static/js/plugin/plugin.main.js');document.body.appendChild(s)}})();																			保存到 麦库
 sk      javascript:(function(){var%20w=window.open('https://kippt.com/extensions/new/?url='+encodeURIComponent(document.location.href)+'&title='+encodeURIComponent(document.title)+'&source=bp1&notes='+encodeURIComponent(''+(window.getSelection?window.getSelection():document.getSelection?document.getSelection():document.selection.createRange().text)),'kippt','width=400,height=245,location=0,links=0,scrollbars=0,toolbar=0');%20if(w)setTimeout(function(){w.focus()},100);else{alert('It%20seems%20that%20you%20have%20a%20popup%20blocker.%20Please,%20hold%20the%20CTRL-key%20and%20try%20again.')}})();      保存到 Kippt
@@ -122,26 +118,21 @@ sg		javascript:(function(f){if(f)if(f.rows){f.cols=f.rows;f.removeAttribute('row
 sw		javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)+'&source=bookmark','_blank','width=450,height=400');})()								分享至 微博
 sn		javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='http://sync.orzdream.com/',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&v=4';a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,0);else%20a();void(0)	 奶嘴瓶分享
 
-@2.3 WordPress命令
-@Quix was of course created by <a href="http://yoast.com">Yoast</a>, a WordPress addict, and as such, some WordPress functions are of course needed!
-codex		http://www.google.com/search?q=site:codex.wordpress.org%20%s	搜索 WordPress codex
-plugin		http://www.google.com/cse?cx=006835583451239722573%3A15duy8wtjos&ie=UTF-8&q=%s&sa=Search&siteurl=www.google.com%2Fcse%2Fhome%3Fcx%3D006835583451239722573%3A15duy8wtjos								搜索 WordPress plugin
-wp      	http://xref.yoast.com/fsearch.php?s=%s&version=trunk			搜索 WordPress function
-wpmu    	http://xref.yoast.com/fsearch.php?s=%s&version=mutrunk			搜索 WordPress MU function
-wpseek		http://wpseek.com/%s/											搜索 WordPress function 在 wpseek.com
-pluginsvn	javascript:r="%r";document.location=r.replace("http://wordpress.org/extend/plugins/","http://svn.wp-plugins.org/");	Take me to the current plugin's SVN
-wptool		script:http://wptoolbar.iamnotagoodartist.com/wptoolbar.js		Open a <a href="http://iamnotagoodartist.com/other/wordpress-admin-toolbar-bookmarklet/">WordPress Toolbar</a>.
-install javascript:l=window.location.toString();window.location='http://coveredwebservices.com/wp-plugin-install/?plugin='+l.replace(/.*?wordpress\.org\/extend\/plugins\/([^\/]+)\/.*/,%20'$1');  Type 'install' in Quix from a plugin page, and this command will help you quickly install the plugin on your own site!
+@2.3 URL相关命令(u)
+ub		 	http://bit.ly/?v=3&u=%re&s=%s%20%te					Shorten with <a href="http://bit.ly/">bit.ly</a>
+ua			http://create.awe.sm/url/share?target=%re&version=1 	Shorten with <a href="http://awe.sm/">awe.sm</a>
+ug			javascript:function%20iprl5(){var%20d=document,z=d.createElement('scr'+'ipt'),b=d.body,l=d.location;try{if(!b)throw(0);if%20(!l)%20{alert('请输入网址！');return;}d.title='(Shortening...)%20'+d.title;z.setAttribute('src','http://www.ruanyifeng.com/webapp/url_shortener_plugin.php?longUrl='+escape(l));b.appendChild(z);}catch(e){alert('请等待网页加载完毕！');}}iprl5();void(0)				Shorten with Goo.gl
+ut			javascript:void(location.href='http://tinyurl.com/create.php?url='+encodeURIComponent(location.href)) 短链 tinyURL
 
-@3.SEO（搜索引擎优化）
+@2.5 SEO（搜索引擎优化）
 @作为 SEO ,对于一个网站肯定有很多要检查的东西，Quix 旨在于将这些东西打包成一组易于记忆的命令。
 archive		http://web.archive.org/web/*/%r											在 archive.org 搜索当前页面
 can			http://www.nickgerner.com/canonicalizable/?homepage_input=%d			查看当前域名的主页是否指向正确
 dmoz 		http://search.dmoz.org/cgi-bin/search?search=%d        					在 DMOZ 搜索当前域名
-gbd  		http://blogsearch.google.com/blogsearch?num=10&q=link%3A%d  			在 Google 博客搜索指向当前域名的链接
-gbu  		http://blogsearch.google.com/blogsearch?num=10&q=link%3A%r  			在 Google 博客搜索指向当前URL的链接
-gc			http://google.com/search?strip=1&q=cache:%r%20%s    					当前网页在 Google 的快照（Cache）
-gi			http://google.com/insights/search/#q=%s&cmpt=q      					在 Google Insight 搜索关键词
+gbd  		https://blogsearch.google.com/blogsearch?num=10&q=link%3A%d  			在 Google 博客搜索指向当前域名的链接
+gbu  		https://blogsearch.google.com/blogsearch?num=10&q=link%3A%r  			在 Google 博客搜索指向当前URL的链接
+gc			https://google.com/search?strip=1&q=cache:%r%20%s    					当前网页在 Google 的快照（Cache）
+gi			https://google.com/insights/search/#q=%s&cmpt=q      					在 Google Insight 搜索关键词
 gwt  		https://www.google.com/webmasters/tools/dashboard?hl=en&siteUrl=http%3A%2F%2F%d%2F  	当前域名的 Google Webmaster Tools （Google 网站管理工具）
 h       	http://quixapp.com/headers/?r=%re&s=%s         							当前网页的 Header 信息
 kd			http://tools.davidnaylor.co.uk/keyworddensity/?url=%r&keyword=%s		<a href="http://tools.davidnaylor.co.uk/keyworddensity/">Keyword Density 查询</a>（关键词密度查询）及更多
@@ -160,7 +151,7 @@ ydir 		http://search.yahoo.com/search/dir?ei=UTF-8&p=%d&h=c   					在Yahoo! dir
 kwte		https://adwords.google.com/select/KeywordToolExternal					转到 AdWords 关键字工具
 kwc			http://google.com/search?q=intitle:%22%s%22%20inanchor:%22%s%22&pws=0			Keyword competition check Google
 
-@4.Webmaster（网站管理员）
+@2.6 Webmaster（网站管理员）
 @同样，网站管理者们也要对自己的网站进行很多的检查，Quix 也对众多的类似服务进行了精选，并赋予好记的命令。
 csstoggle	javascript:var%20Lt=document.getElementsByTagName('LINK');for(var%20x=0,ss=[];Lt[x];x++){var%20rel=Lt[x].rel;if(typeof(rel)=='string'&&rel.toLowerCase().indexOf('style')+1){ss[ss.length]=Lt[x];}}for(var%20x=0;ss[x];x++){ss[x].disabled=!ss[x].disabled;} 	开关当前页面的样式表（CSS）
 fblint      http://developers.facebook.com/tools/lint/?url=%r						Gives feedback from Facebook about your markup.
@@ -185,34 +176,23 @@ w3css      	http://jigsaw.w3.org/css-validator/validator?uri=%r   					检查当
 whois   	http://quixapp.com/whois/%d/%s							                当前域名的 Whois 信息
 xray        script:http://westciv.com/xray/thexray.js 								用 <a href="http://www.westciv.com/xray/">XRAY</a> 检查当前页面
 
-@5.Quix
-@此组命令是为了更于方便地使用 Quix，并加入了 debug 除错功能。
-help		http://quixapp.com/help/#%s                           							Help 页面
-quix		http://quixapp.com/%s/															到达相应的 Quix 页面
-yoast   	http://www.google.com/search?q=%s%20site:yoast.com&btnI=I%27m+Feeling+Lucky 	搜索 Yoast （Quix作者的网站）
-resize		http://quixapp.com/resize/?s=%s													Resize image / video while maintaining aspect ratio
 
-@6.Analytics
+@2.7 Analytics
 @ 一些简单的用于探测网站中 Google Analytics 代码安装情况的脚本。
 da          script:http://quixapp.com/js/detect-analytics.js 								探测当前页面的 Analytics 代码
 ga          script:http://quixapp.com/js/ga-analyzer.js 									分析当前页面 Google Analytics 的设置
 gaexport	script:http://quixapp.com/js/ga-export.js 										让 Google Analytics 的报告中显示更多的行数 （脚本原作者：<a href="http://arjansnaterse.nl/download-limit-google-analytics-export-part-2">Arjan Snaterse</a>）
 bitlyside	script:http://bit.ly/bookmarklet/load.js										<a href="http://bit.ly/pages/tools/sidebar/">Bit.ly Sidebar</a>
 
-@7.URL Shortening（短链接）
-@A group of URL shorteners
-bitly		http://bit.ly/?v=3&u=%re&s=%s%20%te					Shorten with <a href="http://bit.ly/">bit.ly</a>
-awesm		http://create.awe.sm/url/share?target=%re&version=1 	Shorten with <a href="http://awe.sm/">awe.sm</a>
-googl		script:http://quixapp.com/js/quix-googl.js				Shorten with Goo.gl
 
-@8.App Integration commands （应用程序整合类命令）
+@2.8 App Integration commands （应用程序整合类命令）
 @与一些全平台的应用程序相整合的命令。
 evernote		javascript:(function(){EN_CLIP_HOST='http://www.evernote.com';try{var%20x=document.createElement('SCRIPT');x.type='text/javascript';x.src=EN_CLIP_HOST+'/public/bookmarkClipper.js?'+(new%20Date().getTime()/100000);document.getElementsByTagName('head')[0].appendChild(x);}catch(e){location.href=EN_CLIP_HOST+'/clip.action?url='+encodeURIComponent(location.href)+'&title='+encodeURIComponent(document.title);}})();		将当前页加入 <a href="http://www.evernote.com/">Evernote</a> 剪辑
 grsub			script:http://quixapp.com/js/grsub.js					Subscribe in Google Reader
 grnote	javascript:b=document.body;GR________bookmarklet_domain='http://www.google.com';if(b&&!document.xmlVersion){void(z=document.createElement('script'));void(z.src='http://www.google.com/reader/ui/link-bookmarklet.js');void(b.appendChild(z));}else{}	Note current page in Google Reader
 tubesock		tubesock://%r											使用 <a href="http://stinkbot.com/Tubesock/">Tubesock</a> 下载视频
 
-@9.Mac Integration commands （与一些全平台的应用程序相整合的命令。）
+@2.9 Mac Integration commands （与一些全平台的应用程序相整合的命令。）
 @很多 Mac 系统的程序员会允许浏览器以类似 tweetie: 的URL来打开相应的程序，此类的命令就是利用了这一点。
 cssedit			cssedit:previewandextract?%r							在 <a href="http://macrabbit.com/cssedit/">CSSEdit</a> 中预览并提取当前页面
 mars			marsedit:title=%t&url=%r&text=%s						在 <a href="http://www.red-sweater.com/marsedit/">Marsedit</a> 新建一篇关于当前 URL 的博客文章
@@ -221,3 +201,10 @@ tt				tweetie:%su%20%t%20%r									用 <a href="http://www.atebits.com/">Tweeti
 snap			littlesnapper://snap/%r									用 <a href="http://www.realmacsoftware.com/littlesnapper/">LittleSnapper</a> 截取当前页面的截图
 delibar			Delibar://bpost&!p!&%r&!p!&%t&!p!&%s					将当前页加入 <a href="http://www.delibarapp.com/">Delibar</a> 书签
 shove			shovebox://url?url=%r&title=%t							用 <a href="http://www.wonderwarp.com/shovebox/">Shovebox</a> 抓取当前页面
+
+@3 Quix
+@此组命令是为了更于方便地使用 Quix，并加入了 debug 除错功能。
+help		http://quixapp.com/help/#%s                           							Help 页面
+quix		http://quixapp.com/%s/															到达相应的 Quix 页面
+yoast   	http://www.google.com/search?q=%s%20site:yoast.com&btnI=I%27m+Feeling+Lucky 	搜索 Yoast （Quix作者的网站）
+resize		http://quixapp.com/resize/?s=%s													Resize image / video while maintaining aspect ratio
